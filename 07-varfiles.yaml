@@ -1,0 +1,15 @@
+- name: play level variables
+  hosts: local
+  connection: local
+  vars_files:
+   - course.yaml
+  tasks:
+   - name: print course information
+     vars:
+       COURSE: DevSecOps With AWS
+     ansible.builtin.debug:
+      msg: "Hello {{ COURSE }} course, duration {{ DURATION }}, trainer {{ TRAINER }} "
+
+   - name: print course information again
+     ansible.builtin.debug:
+      msg: "Hello {{ COURSE }} course, duration {{ DURATION }}, trainer {{ TRAINER }} "
