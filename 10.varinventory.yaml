@@ -1,6 +1,5 @@
 - name: inventory level variables
-  hosts: local
-  connection: local
+  hosts: frontend
   tasks:
    - name: print course information
      ansible.builtin.debug:
