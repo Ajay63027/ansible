@@ -3,12 +3,12 @@
   connection: local
   tasks:
    - name: printing PLAY-1 and task-1
-     ansible.buitin.debug:
+     ansible.builtin.debug:
      msg: "printing PLAY-1 and task-1"
 
   tasks:
    - name: printing PLAY-1 and task-2
-     ansible.buitin.debug:
+     ansible.builtin.debug:
      msg: "printing PLAY-1 and task-2"
 
 
@@ -19,10 +19,10 @@
   connection: local
   tasks:
    - name: printing PLAY-2 and task-1
-     ansible.buitin.debug:
+     ansible.builtin.debug:
      msg: "printing PLAY-2 and task-1"
 
   tasks:
    - name: printing PLAY-2 and task-2
-     ansible.buitin.debug:
+     ansible.builtin.debug:
      msg: "printing PLAY-2 and task-2"
