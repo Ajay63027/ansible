@@ -15,7 +15,5 @@
   
   tasks:
    - name: print course information again
-     vars:
-       COURSE: DevSecOps With AWS
      ansible.builtin.debug:
       msg: "Hello {{ COURSE }} course, duration {{ DURATION }}, trainer {{ TRAINER }} "
