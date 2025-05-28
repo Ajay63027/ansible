@@ -6,9 +6,9 @@
   vars_files:
    - course.yaml
   vars_prompt:
-   - name: varcheck
-     prompt: enter the prompt:
-     private: false
+  - name: varcheck
+    prompt: please enter varcheck
+    private: false
    
   tasks:
    - name: print check 
