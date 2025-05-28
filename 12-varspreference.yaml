@@ -11,8 +11,8 @@
      private: false
    
   tasks:
-   - name: print course information
+   - name: print check 
      vars:
        varcheck: from tasks
      ansible.builtin.debug:
-      msg: "{{ COURSE }}  "
+      msg: "{{ varcheck }} "
