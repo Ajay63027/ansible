@@ -1,12 +1,12 @@
 - name: PLAY-1
   hosts: local
   connection: local
-  task:
+  tasks:
    - name: printing PLAY-1 and task-1
      ansible.buitin.debug:
      msg: "printing PLAY-1 and task-1"
 
-  task:
+  tasks:
    - name: printing PLAY-1 and task-2
      ansible.buitin.debug:
      msg: "printing PLAY-1 and task-2"
@@ -17,12 +17,12 @@
 - name: PLAY-2
   hosts: local
   connection: local
-  task:
+  tasks:
    - name: printing PLAY-2 and task-1
      ansible.buitin.debug:
      msg: "printing PLAY-2 and task-1"
 
-  task:
+  tasks:
    - name: printing PLAY-2 and task-2
      ansible.buitin.debug:
      msg: "printing PLAY-2 and task-2"
