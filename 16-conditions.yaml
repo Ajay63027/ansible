@@ -1,7 +1,7 @@
 - name: playbook control using ansible facts
   hosts: frontend
   become: yes
-  Tasks:
+  tasks:
   - name : installing nginx if os is redhat using ansible facts
     ansible.builtin.dnf:
      name: nginx
