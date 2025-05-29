@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name: printing facts
-    ansible.builtin.bugs:
+    ansible.builtin.debug:
      msg: "{{ gather_facts }}"
