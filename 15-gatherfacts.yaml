@@ -4,4 +4,4 @@
   tasks:
   - name: printing facts
     ansible.builtin.bugs:
-     msg:  "{{ gather_facts }}"
+     msg: "{{ gather_facts }}"
