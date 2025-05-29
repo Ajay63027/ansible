@@ -2,8 +2,14 @@
   hosts: frontend
   tasks:
   - name: using shell module
-    ansible.builtin.shell: "ls -lrt > /tmp/output.txt"
+    #ansible.builtin.shell: "ls -lrt > /tmp/output.txt"
+    #register: command_results
+
+  - name: using command module
+    ansible.builtin.shell: "ls -lrt"
     register: command_results
+
+
 
   - name: printing command_results
     ansible.builtin.debug:
