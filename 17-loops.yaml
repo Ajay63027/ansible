@@ -1,0 +1,13 @@
+- name: loop in playbook
+  hosts: local
+  connection: loacal
+  tasks: 
+  - name: printing names using loop
+    ansible.builtin.debug:
+     msg: "{{ item }}"
+    loop:
+    - Ajay
+    - Ramu
+    - Suresh
+    - Kiran
+
