@@ -1,5 +1,5 @@
 - name: funtions in ansible
-  hosts: loacal
+  hosts: local
   connection: local
   tasks:
   - name: printing a name
