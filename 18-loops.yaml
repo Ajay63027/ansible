@@ -5,10 +5,10 @@
   tasks: 
   - name: installing packages using loop
     ansible.builtin.package:
-     name: "{{ item }}"
-     state: installed
+     name: "{{ item.name }}"
+     state: "{{ item.state }}"
     loop:
-    - mysql
-    - nginx
-    - zip
+    - { name: 'mysql', state: 'absent' }
+    - { name: 'nginx', state: 'installed' }
+    - { name: 'zip', state: 'installed' }
     
