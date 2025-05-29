@@ -1,6 +1,6 @@
 - name: loop in playbook
   hosts: local
-  connection: loacal
+  connection: local
   tasks: 
   - name: printing names using loop
     ansible.builtin.debug:
