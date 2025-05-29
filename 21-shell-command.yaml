@@ -1,7 +1,7 @@
 - name: In case of in built modules are not useful
   hosts: frontend
   tasks:
-  - name: using shell module
+  #- name: using shell module
     #ansible.builtin.shell: "ls -lrt > /tmp/output.txt"
     #register: command_results
 
