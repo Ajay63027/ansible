@@ -9,6 +9,6 @@
      state: installed
     loop:
     - mysql
-    - ngnix
+    - nginx
     - zip
     
