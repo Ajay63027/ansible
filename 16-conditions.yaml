@@ -8,7 +8,7 @@
      state: present
     when: ansible_os_family == "RedHat"
 
-   -name : installing nginx if os is debian using ansible facts
+  - name : installing nginx if os is debian using ansible facts
     ansible.builtin.apt:
      name: nginx
      state: present
