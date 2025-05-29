@@ -15,8 +15,8 @@
   - name: converting dictionary to items/list
     vars:
      COURSE:
-      name: DevSecOps
-      DURATION: 10Hrs
-      TRAINER: shivakumar
+       name: DevSecOps
+       DURATION: 10Hrs
+       TRAINER: shivakumar
     ansible.builtin.debug:
      msg: "Course info {{ COURSE | dict2item }}"
