@@ -1,9 +1,15 @@
 - name: funtions in ansible
   hosts: local
   connection: local
+  vars:
+   persons: Ajay,Raju,Sridhar,siddu
   tasks:
   - name: printing a name
     ansible.builtin.debug:
      msg: "hello {{ name | default('Ajay') }}"
+
+  - name: printing a name using split funtion
+    ansible.builtin.debug:
+     msg: "hello {{ persons | split(',') }}"
 
 
