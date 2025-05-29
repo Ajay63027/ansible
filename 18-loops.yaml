@@ -1,5 +1,4 @@
 - name: loops in playbook
-
   hosts: local
   connection: local
   tasks: 
