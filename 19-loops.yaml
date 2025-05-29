@@ -1,0 +1,13 @@
+- name: loops in playbook
+  hosts: local
+  connection: local
+  become: yes
+  tasks: 
+  - name: installing packages using loop
+    ansible.builtin.package:
+     name: "{{ item.name }}"
+     state: "{{ item.state }}"
+    loop:
+    - { name: 'mysql', state: 'absent' }
+    - { name: 'nginx', state: 'installed' }
+    - { name: 'zip', state: 'installed' }
