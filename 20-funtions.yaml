@@ -35,4 +35,10 @@
      name: "ajay"
     ansible.builtin.debug:
      msg: "hello {{ name | upper }}"
+
+  - name: checking ip
+    vars:
+     IP: "346.354.566.879"
+    ansible.builtin.debug:
+     msg: "hello {{ IP | ansible.utils.ipaddr }}"
   
