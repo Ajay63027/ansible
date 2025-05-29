@@ -1,0 +1,9 @@
+- name: funtions in ansible
+  hosts: loacal
+  connection: local
+  tasks:
+  - name: printing a name
+    ansible.builtin.debug:
+    msg: "hello {{ name | default(Ajay) }}"
+
+
