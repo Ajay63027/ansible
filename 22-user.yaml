@@ -10,7 +10,7 @@
     ansible.builtin.command: useradd roboshop
     when: output.rc !=0 
 
-    -name: user already exist
+  - name: user already exist
     ansible.builtin.debug:
      msg: "user already exist"
     when: output.rc =0 
