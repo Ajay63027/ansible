@@ -4,3 +4,14 @@
   tasks:
   - name: prinng user id 
     ansible.builtin.command: id roboshop
+    ignore_errors: true
+
+  - name: create user
+    ansible.builtin.command: useradd roboshop
+    when: output.rc !=0 
+
+    -name: user already exist
+    ansible.builtin.debug:
+     msg: "user already exist"
+    when: output.rc =0 
+  
