@@ -4,6 +4,7 @@
   tasks:
   - name: prinng user id 
     ansible.builtin.command: id roboshop
+    register: output
     ignore_errors: true
 
   - name: create user
