@@ -1,0 +1,14 @@
+- name: installing nginx
+  hosts: frontend
+  becomes: yes
+  tasks:
+  - name : installing nginx
+    ansible.builtin.dnf:
+    name: nginx
+    state: installed
+
+  - name: run nginx
+    ansible.builtin.sercice:
+    name: nginx
+    state: started
+    enabled: yes
